@@ -8,7 +8,8 @@ source ${VENV}/bin/activate
 pip install -r requirements.txt
 
 # run a rabbitmq server
-docker run -d rabbitmq:3.6.6
+docker rm -vf rabbitmq
+docker run -d --name rabbitmq -p 5672:5672 rabbitmq:3.6.6
 
 echo
 echo
