@@ -15,5 +15,5 @@ echo
 echo
 echo "run the following commands (you'll need 2 terminals)"
 echo "$  source ${VENV}/bin/activate"
-echo "$  celery -A task worker --loglevel=info -c 4 -P prefork"
+echo "$  celery -A task worker --loglevel=info -c 1 -P prefork"
 echo "$  python test.py"
